@@ -26,9 +26,46 @@ h1, h2, h3, h4, h5, h6{
 
 /* intro */
 .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background: url('../img/intro.jpg') center no-repeat;
+}
+
+.intro-inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-title{
+    /* text-align: center; */
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.intro-title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 70px auto 0;
+    margin-bottom: 50px;
+}
+
+.intro-title{
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    /* text-align: center; */
+    line-height: 1;
 }
 
 /* header */
@@ -82,7 +119,7 @@ nav a:after{
     z-index: 1;
 
     opacity: 0;
-    transition: opacity .2s linear;
+    transition: opacity .2s line ar;
 
 }
 
@@ -93,4 +130,70 @@ nav a:hover{
 
 nav a:hover:after{
    opacity: 1;
+}
+
+/* button */
+.btn{
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #fff;
+}
+
+/* slider */
+.intro-slider{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.slider_inner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-item:before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #fff;
+    opacity: .7;
+    transition:  background-color .2s linear;
+}
+
+.slider-item{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    opacity: .7;
+    transition: opacity .2s linear;
+}
+
+.slider_num{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.slider-item:hover{
+    opacity: 1;
+}
+
+.slider-item:hover:before{
+    background-color: #f38181;
 }
