@@ -1,2 +1,1 @@
-# someLending
-Landing page from psd
+[Зайти посмотреть](https://lenarqa.github.io/someLending/)
