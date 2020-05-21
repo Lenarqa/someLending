@@ -320,3 +320,25 @@ nav a:hover:after{
     text-transform: uppercase;
     color: #fff;
 }
+
+/* services */
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-items{
+    display: flex;
+    width: 33%;
+}
+
+.service-content{
+
+}
+
+.service-title{
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
