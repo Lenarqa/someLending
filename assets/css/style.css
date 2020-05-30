@@ -368,7 +368,7 @@ nav a:hover:after{
 
 /* section devices */
 .section-devices{
-    background: url("/assets/img/bgForest.jpg") center no-repeat;
+    background: url('../img/bgForest.jpg') center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     padding-bottom: 0;
