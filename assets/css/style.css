@@ -365,3 +365,29 @@ nav a:hover:after{
     color: #999999;
     font-size: 15px;
 }
+
+/* section devices */
+.section-devices{
+    background: url("/assets/img/bgForest.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices-item{
+    display: block;
+}
+
+.devices-item-iphone{
+    position: absolute;
+    z-index: 1;
+    bottom: -85px;
+    right: 0;
+}
