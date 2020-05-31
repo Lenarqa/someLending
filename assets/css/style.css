@@ -372,6 +372,7 @@ nav a:hover:after{
     -webkit-background-size: cover;
     background-size: cover;
     padding-bottom: 0;
+    margin-bottom: 55px;
 }
 
 .devices{
@@ -390,4 +391,39 @@ nav a:hover:after{
     z-index: 1;
     bottom: -85px;
     right: 0;
+}
+
+
+/* weDo */
+.wedo{
+    margin-top: 95px;
+    display: flex;
+}
+
+.wedo-item{
+    width: 50%;
+}
+
+.accordion{
+    
+}
+
+.accordion-header{
+    display: flex;
+}
+
+.accordion-title{
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.accordion-contant{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
 }
