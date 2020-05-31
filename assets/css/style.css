@@ -213,6 +213,11 @@ nav a:hover:after{
     padding: 90px 0;
 }
 
+.section-grey{
+    background: #f8f8f8;
+}
+
+
 .section_header{
     width: 100%;
     max-width: 950px;
@@ -481,4 +486,87 @@ nav a:hover:after{
     padding: 15px 20px;
     display: none;
 }
+
+/* reviews цитата */
+.reviews{
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 0;
+    color: transparent;
+}
+
+.reviews-btn-prev{
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews-btn-next{
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.reviews-btn::after{
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    
+    border-top: 2px solid #cfcfcf;
+    border-left: 2px solid #cfcfcf;
+}
+
+.reviews-item{
+    padding-left: 205px;
+    position: relative;
+}
+
+
+.reviews-photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 4px solid #95e1d3;  
+}
+
+
+.reviews-autor{
+    font-family: 'Kaushan Script';
+    font-style: italic;
+    font-size: 24px;
+}
+
+.reviews-autor::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+}
+
+.reviews-text{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b1b1b1;
+}
+
+
+
+
+
+
+
+
+
 
