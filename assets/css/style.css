@@ -685,7 +685,7 @@ nav a:hover:after{
 /* clients */
 .section-clients{
     margin-top: 135px;
-    background: url("/assets/img/bgForest.jpg") no-repeat;
+    background: url("/assets/img/bgClients.png") no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -699,22 +699,22 @@ nav a:hover:after{
 
 .clients-item{
     width: 50%;
+    padding: 0 20px 0 175px;
     position: relative;
     margin: 40px 0;
 }
 
 .clients-img{
     position: absolute;
-    left:0;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    left: 40px;
     top:0;
     z-index: 1;
 }
 
-.clients-info{
-    padding: 0 45px 0 135px;
-}
-
-.clients-title{
+.clients-name{
     font-size: 14px;
     color: #333333;
     text-transform: uppercase;
@@ -723,9 +723,16 @@ nav a:hover:after{
 
 .clients-prof{
     font-family: 'Roboto';
-    font-weight: 300;
     font-size: 15px;
+    color: #333333;
+    font-weight: 300;
     font-style: italic;
+}
+
+.clients-text{
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #b0b0b0;
 }
 
 .clients-prof::after{
