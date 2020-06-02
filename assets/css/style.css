@@ -681,3 +681,58 @@ nav a:hover:after{
 .works-col{
     flex: 1 1 0;
 }
+
+/* clients */
+.section-clients{
+    margin-top: 135px;
+    background: url("/assets/img/bgForest.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.clients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.clients-item{
+    width: 50%;
+    position: relative;
+    margin: 40px 0;
+}
+
+.clients-img{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+
+.clients-info{
+    padding: 0 45px 0 135px;
+}
+
+.clients-title{
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.clients-prof{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.clients-prof::after{
+    display: block;
+    content:"";
+    height: 3px;
+    width: 60px;
+    margin: 10px 0;
+    background-color: #f38181;
+}
