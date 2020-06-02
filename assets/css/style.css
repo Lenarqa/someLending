@@ -682,3 +682,9 @@ nav a:hover:after{
 .works-col{
     flex: 1 1 0;
 }
+
+/* avatar photo */
+.avatar-photo{
+    height: auto;
+    border: none;
+}
