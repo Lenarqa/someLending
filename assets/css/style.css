@@ -780,3 +780,52 @@ nav a:hover:after{
     font-size: 15px;
     font-style: italic;
 }
+
+.stories-title{
+    font-size: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.stories-text{
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.stories-text:after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 380px;
+    background-color: #b3b3b3;
+    left: 0;
+    margin: 10px 0;
+}
+
+.stories-bottom {
+    display: flex;
+}
+
+.bottom-num{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 25px;
+}
+
+.view{
+    position: relative;
+}
+
+.comment {
+    position: relative;
+    margin-left: 20px;
+}
+
+.comment-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
