@@ -749,6 +749,7 @@ nav a:hover:after{
 .stories{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 118px;
 }
 
 .stories-item{
@@ -809,9 +810,11 @@ nav a:hover:after{
 
 .bottom-num{
     font-family: 'Roboto';
+    color: #b3b3b3;
     font-size: 15px;
     font-weight: 300;
     padding-left: 25px;
+    
 }
 
 .view{
@@ -828,4 +831,37 @@ nav a:hover:after{
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* map */
+.section-map{
+    /* background-color: #ccc; */
+    padding: 60px 0;
+    background: url('../img/mapBG.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;  
+
+}
+
+.map{
+    text-align: center;
+
+}
+
+.map-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #f38181;
+    /* padding: 10px; */
+}
+
+.map-title:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: #f38181;
+    margin: 15px auto;
+
 }
