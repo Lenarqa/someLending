@@ -688,6 +688,7 @@ nav a:hover:after{
     background: url("../img/bgClients.png") no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
+    margin-bottom: 110px;
 }
 
 .clients{
@@ -742,4 +743,40 @@ nav a:hover:after{
     width: 60px;
     margin: 10px 0;
     background-color: #f38181;
+}
+
+/* stories */
+.stories{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stories-item{
+    flex: 1 1 0;
+}
+
+.stories-img{
+    position: relative;
+}
+
+.stories-date{
+    position: absolute;
+    background-color: #95e1d3;
+    padding: 16px;
+    color: #fff;
+    line-height: 1;
+    left: -10px;
+    bottom: 20px;
+}
+
+.date-num{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.date-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
 }
