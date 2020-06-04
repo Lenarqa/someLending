@@ -1014,3 +1014,16 @@ nav a:hover:after{
     font-weight: 300;
     font-style: italic;
 }
+
+/* footer */
+.footer-section{
+    padding: 17px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.footer-name{
+    color: #f49f9f;
+}
