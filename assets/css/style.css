@@ -868,6 +868,8 @@ nav a:hover:after{
 /* information */
 .information{
     display: flex;
+    padding: 70px 0;
+    border-bottom: 1px solid #e5e5e5; /* проверить потом */
 }
 
 .information-col{
@@ -888,11 +890,13 @@ nav a:hover:after{
     font-family: "Roboto", serif;
     font-size: 15px;
     color: #b1b1b1;
+    margin: 20px 0 50px 0;
 }
 
 .information-followers{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .followers-num{
@@ -904,3 +908,95 @@ nav a:hover:after{
     font-family: "Roboto", serif;
     font-size: 15px;
 }
+
+.information-followers:after{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 430px;
+    background-color: #e5e5e5;
+    top: 30px;
+}
+
+.information-a{
+    display: flex;
+    padding: 20px 0;
+}
+
+.information-a-text{
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    color: #ccc;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.information-a-img{
+    margin-left: 20px;
+}
+
+.information-input{
+    display: flex;
+}
+
+.information-input-email{
+    width: 230px;
+    padding: 15px 10px;
+    border: 1px solid #e7e7e7;
+    color: #cfcfcf;
+    font-style: italic;
+}
+
+.information-input-btn{
+    border: none;
+    padding: 16px 35px;
+    background-color: #95e1d3;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+}
+
+
+/* blogs */
+.blogs-col{
+    margin-left: 80px;
+}
+
+.blogs-title{
+    margin: 30px 0 38px 0; 
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs-item{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.blogs-item-content{
+    margin: 10px;
+    padding: 5px;
+}
+
+.blogs-item-title{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.blogs-item-date{
+    font-family: "Roboto", serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: #c3c3c3;
+}
+
