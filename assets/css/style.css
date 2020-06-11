@@ -178,10 +178,10 @@ nav a:hover:after{
 
 .slider-item{
     width: 24%;
+    padding: 20px;
     font-size: 18px;
     text-transform: uppercase;
     color: #fff;
-    padding: 20px;
     opacity: .7;
     transition: opacity .2s linear;
 }
@@ -256,13 +256,14 @@ nav a:hover:after{
 /* card */
 
 .card{
-    margin-top: 80px;
+    margin: 80px -15px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .card-item{
-    width: 380px;
+    width: 33%;
+    padding: 0 15px;
 }
 
 .card-inner{
@@ -289,6 +290,8 @@ nav a:hover:after{
 
 .card-image img{
     display: block;
+    width: 100%;
+    height: auto;
     transition: opacity 0.1s linear;
 }
 
@@ -315,6 +318,7 @@ nav a:hover:after{
 
 .stats{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stats-item{
@@ -1050,6 +1054,23 @@ nav a:hover:after{
         font-size: 80px;
     }
 
+    /* statistics */
+    .stats{
+        justify-content: center;
+    }
+    .stats-item{
+        flex: none;
+        width: 33%;
+        border: 0;
+        padding: 30px 0;
+    }
+
+}
+
+@media(max-width: 866px){
+    .slider-item:before{
+        width: 70%;
+    }
 }
 
 @media(max-width: 770px){
@@ -1064,9 +1085,30 @@ nav a:hover:after{
     }
 
     .slider-item:before{
-        width: 100%;
+        width: 50%;
     }
 
+    /* section */
+    .section{
+        padding: 45px 0;
+    }
+
+    /* card */
+    .card{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card-item{
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+
+    .card-item:last-child{
+        margin-bottom: 0;
+    }
 
 }
 
@@ -1078,6 +1120,39 @@ nav a:hover:after{
 
     .intro-title{
         font-size: 40px;
+    }
+
+    /* section */
+    .section-header{
+        margin-bottom: 50px;
+    }
+
+    .section_subtitle{
+        font-size: 20px;
+    }
+
+    .section_title{
+        font-size: 24;
+    }
+
+    .section_title::after{
+        margin: 20px auto;
+    }
+
+    /* stats */
+    .stats-item{
+        flex: flex;
+        width: 100%;
+        border-bottom: 1px solid #b5eae0;
+        padding: 30px 0;
+    }
+
+    .stats-number{
+        font-size: 52px;
+    }
+
+    .stats-item:last-child{
+        border-bottom: 0;
     }
 
 }
