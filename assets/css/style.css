@@ -28,7 +28,7 @@ hr{
 
 /* .container */
 .container{
-    max-width: 100%;
+    width: 100%;
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
@@ -65,8 +65,7 @@ hr{
     width: 60px;
     height: 3px;
     background-color: #fff;
-    margin: 70px auto 0;
-    margin-bottom: 50px;
+    margin: 30px auto;
 }
 
 .intro-title{
@@ -176,6 +175,17 @@ nav a:hover:after{
     justify-content: space-around;
 }
 
+
+.slider-item{
+    width: 24%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    opacity: .7;
+    transition: opacity .2s linear;
+}
+
 .slider-item:before{
     content: "";
     display: block;
@@ -185,16 +195,6 @@ nav a:hover:after{
     opacity: .7;
     transition:  background-color .2s linear;
 }
-
-.slider-item{
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 20px;
-    opacity: .7;
-    transition: opacity .2s linear;
-}
-
 .slider_num{
     font-size: 25px;
     font-weight: 700;
@@ -1053,9 +1053,20 @@ nav a:hover:after{
 }
 
 @media(max-width: 770px){
+    /* nav */
     nav{
         display: none;
     }
+
+    /* slider */
+    .slider-text{
+        display: none;
+    }
+
+    .slider-item:before{
+        width: 100%;
+    }
+
 
 }
 
