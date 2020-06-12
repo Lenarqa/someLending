@@ -351,10 +351,15 @@ nav a:hover:after{
 }
 
 .service-items{
-    flex: 1 1 0;
+    width: 33%;
+    /* flex: 1 1 0; */
     position: relative;
-    padding-left: 90px;
-    padding-right: 35px;
+    padding: 0 40px 50px 90px;
+    margin-bottom: 40px;
+}
+
+.service-item--border{
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services-image{
@@ -1065,6 +1070,16 @@ nav a:hover:after{
         padding: 30px 0;
     }
 
+   /* services */
+    .service-items{
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .service-item--border{
+        border-bottom: 0;
+    }
+
 }
 
 @media(max-width: 866px){
@@ -1109,6 +1124,26 @@ nav a:hover:after{
     .card-item:last-child{
         margin-bottom: 0;
     }
+
+    /* services */
+    .services{
+        justify-content: center;
+    }
+
+    .service-items{
+        width: 70%;
+        padding-bottom: 0;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .services-image{
+        left: 0;
+    }
+
+ 
+
+
 
 }
 
@@ -1155,4 +1190,13 @@ nav a:hover:after{
         border-bottom: 0;
     }
 
+
+     /* services */
+     .services{
+        justify-content: center;
+    }
+
+    .service-items{
+        width: 100%;
+    }
 }
