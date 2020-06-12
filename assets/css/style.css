@@ -25,6 +25,10 @@ hr{
     height: 1px;
     margin: 50px 0;
 }
+/* page */
+.page{
+    overflow: hidden;
+}
 
 /* .container */
 .container{
@@ -785,16 +789,26 @@ nav a:hover:after{
 /* stories */
 .stories{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 118px;
+    /* margin-bottom: 118px; */
+    margin: 0 -15px 118px -15px;
 }
 
 .stories-item{
-    flex: 1 1 0;
+    width: 33.3%;
+    padding: 0 15px;
 }
 
 .stories-img{
     position: relative;
+}
+
+.stories-img-header{
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
 }
 
 .stories-date{
@@ -907,14 +921,16 @@ nav a:hover:after{
     display: flex;
     padding: 70px 0;
     border-bottom: 1px solid #e5e5e5; /* проверить потом */
+    margin: 0 -15px;
 }
 
 .information-col{
-    flex: 1 1 0;
+    padding: 0 15px;
+    width: 33%;
 }
 
 .information-col:first-child{
-    flex: 1.2;
+    width: 36%;
 }
 
 .information-title{
@@ -1017,6 +1033,12 @@ nav a:hover:after{
     margin: 10px 0;
 }
 
+.blog-item-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .blogs-item-content{
     margin: 10px;
     padding: 5px;
@@ -1043,6 +1065,18 @@ nav a:hover:after{
     text-transform: uppercase;
     margin: 30px 0 38px 0;
 }
+
+.instagram-images{
+    display: flex;
+}
+
+.instagram-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 1px;
+}
+
 
 .instagram-text{
     margin-top: 10px;
@@ -1079,6 +1113,8 @@ nav a:hover:after{
     .reviews-text{
         font-size: 20px;
     }
+
+    /* blogs */
 
 }
 
@@ -1143,6 +1179,31 @@ nav a:hover:after{
 
     .clients-item:last-child{
         margin-bottom: 0;
+    }
+
+    /* footer */
+    .information{
+        flex-wrap: wrap;
+    }
+    .information-col{
+        width: 50%;
+    }
+
+    .blogs-col{
+        margin-left: 0;
+    }
+
+    .information-col:first-child{
+        width: 100%;
+    }
+
+    /* instagtam */
+    .information-col-third{
+        text-align: center;
+    }
+
+    .instagram-images{
+        justify-content: center;
     }
 }
 
@@ -1245,6 +1306,27 @@ nav a:hover:after{
     .works-col{
         flex: none;
         width: 50%;
+    }
+
+    /* stories */
+
+    .stories{
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .stories-item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-item:last-child{
+        margin-bottom: 0;
+    }
+
+    /* footer */
+    .information-col{
+        width: 100%;
     }
 }
 
@@ -1357,4 +1439,60 @@ nav a:hover:after{
     .clients-prof::after{
         margin: 15px auto;
     }
+
+    /* stories */
+    .stories-text:after{
+        width: 250px;
+        margin: 10px auto;
+    }
+    /* footer */
+    .information-input{
+        flex-wrap: wrap;
+    }
+
+    .information-input-email{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .information-input-btn{
+        width: 100%;
+    }
+
+    /* information a */
+    .information-followers:after{
+        width: 200px;    
+    }
+
+    .information-a-text{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .information-a{
+        flex-direction: column;
+    }
+
+    .information-a-wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .inf-a-item{
+        display: inline-block;
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* blogs */
+    .blogs-item{
+        align-items: center;
+    }
+
+    .blog-item-img{
+        width: 80px;
+        height: 50px;
+    }
+
 }
