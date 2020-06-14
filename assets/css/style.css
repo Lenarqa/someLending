@@ -103,6 +103,7 @@ hr{
 /* header-fixed */
 .header-fixed{
     background-color: #eb8b8d;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     right: 0;
