@@ -25,7 +25,28 @@ $(function(){
     }
 
     // smooth scroll
-    
+    $("[data-scroll]").on('click', function(event){
+        event.preventDefault();
+        
+        var $this = $(this); 
+        var elementId = $this.data("scroll");
+        var elementOffset = $(elementId).offset().top;
+
+        $('#nav a').removeClass('nav-active');
+        $this.addClass('nav-active');
+        
+        $('html, body').animate({
+            scrollTop: elementOffset
+        }, 500);
+    });
+
+    // menu nav-toggle
+    $("#nav-toggle").on('click',function(event){
+        event.preventDefault();
+
+        $('#nav-toggle').toggleClass('toggle-active');
+        $("#nav").toggleClass('nav-a-active');
+    });
 
 });
 

@@ -16,17 +16,17 @@
     <header class="header header-active" id="header">
         <div class="container">
             <div class="header__inner">
-                <div class="logo">Mogo</div>
+                <div class="logo" data-scroll="#intro">Mogo</div>
                 
-                <nav>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Service</a>
-                    <a class="nav-link" href="#">Work</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Contact</a>
+                <nav id="nav">
+                    <a class="nav-link" href="#" data-scroll="#about">About</a>
+                    <a class="nav-link" href="#" data-scroll="#service">Service</a>
+                    <a class="nav-link" href="#" data-scroll="#work">Work</a>
+                    <a class="nav-link" href="#" data-scroll="#blog">Blog</a>
+                    <a class="nav-link" href="#" data-scroll="#contact">Contact</a>
                 </nav>
 
-                <button class="nav-toggle toggle-active" type="button">
+                <button class="nav-toggle" type="button" id="nav-toggle">
                     <span class="nav-toggle-item">Menu</span>
                 </button>
             </div>
@@ -55,7 +55,7 @@
            </div>
        </div>
        
-       <section class="section">
+       <section class="section" id="about">
            <div class="container">
        
                <div class="section_header">
@@ -131,7 +131,7 @@
        </div>
        
        
-       <section class="section">
+       <section class="section" id="service">
            <div class="container">
                <div class="section_header">
                    <h3 class="section_subtitle">We work with</h3>
@@ -393,7 +393,8 @@
            </div>
        </section>
        
-       <section class="section">
+       <!-- work -->
+       <section class="section" id="work">
            <div class="container">
                <div class="section_header">
                    <h3 class="section_subtitle">What we do</h3>
@@ -531,7 +532,8 @@
            </div> <!-- container-->
        </section>
        
-       <section>
+       <!-- blogs -->
+       <section id="blog">
            <div class="container"> 
                <div class="section_header">
                    <h3 class="section_subtitle">Our stories</h3>
@@ -608,6 +610,7 @@
            </div>
        </section>
        
+       <!-- map -->
        <section class="section-map">
            <div class="column">
                <div class="map">
@@ -617,7 +620,8 @@
            </div>
        </section>
        
-       <section class="section-grey">
+       <!-- information -->
+       <section class="section-grey" id="contact">
            <div class="container">
                <div class="information">
        

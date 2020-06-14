@@ -157,6 +157,14 @@ nav a:after{
     transition: opacity .2s linear;
 
 }
+.nav-active{
+    color: #fbde8a;
+    transition: color .2s linear;
+}
+
+.nav-active::after{
+    opacity: 1;
+}
 
 nav a:hover{
     color: #fbde8a;
@@ -164,7 +172,7 @@ nav a:hover{
 }
 
 nav a:hover:after{
-   opacity: 1;
+    opacity: 1;
 }
 
 /* nav-toggle */
@@ -227,6 +235,10 @@ nav a:hover:after{
 /* toggle-active */
 .toggle-active .nav-toggle-item{
     background: none;
+}
+
+.nav-toggle:focus{
+    outline: none;
 }
 
 .toggle-active .nav-toggle-item::before,
@@ -829,7 +841,7 @@ nav a:hover:after{
     background: url("../img/bgClients.png") no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .clients{
@@ -1329,6 +1341,10 @@ nav a:hover:after{
         top: 100%;
         left: 0;
         background-color: #eb8b8d;
+    }
+
+    .nav-a-active{
+        display: block;
     }
 
     .nav-link{
