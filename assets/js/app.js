@@ -38,6 +38,13 @@ $(function(){
         $('html, body').animate({
             scrollTop: elementOffset
         }, 500);
+
+        $('#nav-logo').removeClass('nav-active');
+        
+        if($("#nav-toggle").hasClass('toggle-active')){
+            $('#nav-toggle').toggleClass('toggle-active');
+            $("#nav").toggleClass('nav-a-active');
+        }
     });
 
     // menu nav-toggle
