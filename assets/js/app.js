@@ -55,5 +55,16 @@ $(function(){
         $("#nav").toggleClass('nav-a-active');
     });
 
+
+    // wedo collapse accordion
+    $("[data-collapse]").on('click', function(event){
+        event.preventDefault();
+
+        var $this = $(this); 
+        var elementId = $(this).data('collapse');
+        
+        $($this).toggleClass('active');
+        // $(elementId).slideToggle();
+    });
 });
 
