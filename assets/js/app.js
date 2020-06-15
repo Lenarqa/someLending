@@ -1,15 +1,23 @@
 $(function(){
     var header = $('#header');
     var introHeight = $('#intro').innerHeight();
-    var scrollOffset = $(window).scrollTop();;
+    var scrollOffset = $(window).scrollTop();
+    var scrollOffsetBottom = $(window).scrollTop() + $(window).innerHeight();
+    var statsHeight = $('.stats').offset().top;
+    var showStats = false;
 
     // fixed header
     CheckScroll(scrollOffset);
 
     $(window).on('scroll', function(){
         scrollOffset = $(this).scrollTop();
-
+        scrollOffsetBottom = $(window).scrollTop() + $(window).innerHeight();
+        
+        console.log("bottom = " + scrollOffsetBottom);
+        
         CheckScroll(scrollOffset);
+
+        CheckScrollStats(scrollOffsetBottom);
           
     });
 
@@ -77,6 +85,36 @@ $(function(){
         fade: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        swipe: true,
     });
+
+    // counting stats number
+    function CheckScrollStats(scrollOffsetBottom){
+        
+        if(showStats){
+            return;
+        }else{
+            if(scrollOffsetBottom >= statsHeight){
+                $('.stats-number').each(function(){
+                    $(this).prop('stats-item', 0).animate({
+                        counter: $(this).text()
+                    },{
+                        duration:2500,
+                        easing:'swing',
+                        step:function(now){
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+                showStats = true;
+            }
+        }
+
+       
+    }
+
+    
+    
+
 });
 

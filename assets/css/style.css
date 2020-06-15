@@ -643,16 +643,20 @@ nav a:hover:after{
     z-index: 1;
     font-size: 0;
     color: transparent;
+    cursor: pointer;
+    outline: none;
 }
 
 .slick-prev{
     left: -67px;
     transform: rotate(-45deg);
+    outline: none;
 }
 
 .slick-next{
     right: -67px;
     transform: rotate(135deg);
+    outline: none;
 }
 
 .slick-arrow::after{
@@ -663,6 +667,7 @@ nav a:hover:after{
     
     border-top: 2px solid #cfcfcf;
     border-left: 2px solid #cfcfcf;
+    outline: none;
 }
 
 .reviews-btn::after{
@@ -673,6 +678,7 @@ nav a:hover:after{
     
     border-top: 2px solid #cfcfcf;
     border-left: 2px solid #cfcfcf;
+    outline: none;
 }
 
 .reviews-item{
