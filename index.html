@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <meta name="format-detection" content="telephone=no">
     <title>Mogo</title>
     <script src="https://kit.fontawesome.com/946208057a.js" crossorigin="anonymous"></script>
@@ -278,12 +279,18 @@
        <section class="section section-grey">
            <div class="container">
                <div class="reviews">
-                   <a class="reviews-btn reviews-btn-prev" href="#">prev</a>
-                   <a class="reviews-btn reviews-btn-next" href="#">next</a>
-                   <div class="reviews-item">
-                       <img class="reviews-photo" src="assets/img/avatar.png" alt="massageImg">
-                       <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-                       <p class="reviews-autor">Jon Doe</p>
+                   <div data-slider>
+                        <div class="reviews-item">
+                            <img class="reviews-photo" src="assets/img/avatar.png" alt="massageImg">
+                            <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                            <p class="reviews-autor">Jon Doe</p>
+                        </div>
+
+                        <div class="reviews-item">
+                            <img class="reviews-photo" src="assets/img/avatar.png" alt="massageImg">
+                            <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                            <p class="reviews-autor">Jon Doe</p>
+                        </div>
                    </div>
                </div>
            </div>
@@ -472,12 +479,19 @@
        <section>
            <div class="container">
                <div class="reviews">
-                   <a class="reviews-btn reviews-btn-prev" href="#">prev</a>
-                   <a class="reviews-btn reviews-btn-next" href="#">next</a>
-                   <div class="reviews-item">
-                       <img class="reviews-photo avatar-photo" src="assets/img/avatar.png" alt="avatarImg">
-                       <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-                       <p class="reviews-autor">Joshua Earle</p>
+                   <div data-slider>
+
+                        <div class="reviews-item">
+                            <img class="reviews-photo avatar-photo" src="assets/img/avatar.png" alt="avatarImg">
+                            <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                            <p class="reviews-autor">Joshua Earle</p>
+                        </div>
+
+                       <div class="reviews-item">
+                           <img class="reviews-photo avatar-photo" src="assets/img/avatar.png" alt="avatarImg">
+                           <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                           <p class="reviews-autor">Joshua Earle</p>
+                       </div>
                    </div>
                </div>
            </div>
@@ -723,6 +737,7 @@
        </footer>
     </div><!--page-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,3 @@
-console.clear();
-
 $(function(){
     var header = $('#header');
     var introHeight = $('#intro').innerHeight();
@@ -28,9 +26,15 @@ $(function(){
     $("[data-scroll]").on('click', function(event){
         event.preventDefault();
         
+        var elementOffset;
         var $this = $(this); 
         var elementId = $this.data("scroll");
-        var elementOffset = $(elementId).offset().top;
+        console.log(elementId)
+        if(elementId === "#about"){
+            elementOffset = $(elementId).offset().top;
+        }else{
+            elementOffset = $(elementId).offset().top - $('#header').innerHeight();
+        }
 
         $('#nav a').removeClass('nav-active');
         $this.addClass('nav-active');
@@ -65,6 +69,14 @@ $(function(){
         
         $($this).toggleClass('active');
         // $(elementId).slideToggle();
+    });
+
+    // revievs slider 
+    $('[data-slider]').slick({
+        infinite: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
     });
 });
 
