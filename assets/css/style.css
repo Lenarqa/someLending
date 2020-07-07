@@ -17,6 +17,15 @@ body{
     user-select: none;
 }
 
+*:focus{
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
 *,
 *:after,
 *:before{
