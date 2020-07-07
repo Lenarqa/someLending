@@ -13,12 +13,9 @@ $(function(){
         scrollOffset = $(this).scrollTop();
         scrollOffsetBottom = $(window).scrollTop() + $(window).innerHeight();
         
-        console.log("bottom = " + scrollOffsetBottom);
-        
-        CheckScroll(scrollOffset);
+        CheckScroll(scrollOffset);//intro 
 
-        CheckScrollStats(scrollOffsetBottom);
-          
+        CheckScrollStats(scrollOffsetBottom);//stats
     });
 
     function CheckScroll(scrollOffset){
@@ -37,7 +34,7 @@ $(function(){
         var elementOffset;
         var $this = $(this); 
         var elementId = $this.data("scroll");
-        console.log(elementId)
+
         if(elementId === "#about"){
             elementOffset = $(elementId).offset().top;
         }else{
@@ -108,13 +105,8 @@ $(function(){
                 });
                 showStats = true;
             }
-        }
-
-       
+        }  
     }
-
-    
-    
 
 });
 
